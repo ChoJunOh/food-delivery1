@@ -19,6 +19,8 @@ import DeliveryDetail from "./components/listers/DeliveryDetail"
 import NotificationManager from "./components/listers/NotificationCards"
 import NotificationDetail from "./components/listers/NotificationDetail"
 
+import OrderListView from "./components/OrderListView"
+import OrderListViewDetail from "./components/OrderListViewDetail"
 
 export default new Router({
     // mode: 'history',
@@ -78,6 +80,16 @@ export default new Router({
                 component: NotificationDetail
             },
 
+            {
+                path: '/orderLists',
+                name: 'OrderListView',
+                component: OrderListView
+            },
+            {
+                path: '/orderLists/:id',
+                name: 'OrderListViewDetail',
+                component: OrderListViewDetail
+            },
 
 
     ]

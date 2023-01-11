@@ -24,6 +24,24 @@ public class Notification  {
     
     
     private Long id;
+    
+    
+    
+    
+    
+    private String userId;
+    
+    
+    
+    
+    
+    private String message;
+    
+    
+    
+    
+    
+    private String status;
 
     @PostPersist
     public void onPostPersist(){
@@ -84,7 +102,7 @@ public class Notification  {
 
         
     }
-    public static void notifyViaKakao(DelivaryStarted delivaryStarted){
+    public static void notifyViaKakao(DeliveryStarted deliveryStarted){
 
         /** Example 1:  new item 
         Notification notification = new Notification();
@@ -94,7 +112,7 @@ public class Notification  {
 
         /** Example 2:  finding and process
         
-        repository().findById(delivaryStarted.get???()).ifPresent(notification->{
+        repository().findById(deliveryStarted.get???()).ifPresent(notification->{
             
             notification // do something
             repository().save(notification);

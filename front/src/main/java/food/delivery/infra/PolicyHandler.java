@@ -54,11 +54,11 @@ public class PolicyHandler{
         
 
     }
-    @StreamListener(value=KafkaProcessor.INPUT, condition="headers['type']=='DelivaryStarted'")
-    public void wheneverDelivaryStarted_UpdateOrderStatus(@Payload DelivaryStarted delivaryStarted){
+    @StreamListener(value=KafkaProcessor.INPUT, condition="headers['type']=='DeliveryStarted'")
+    public void wheneverDeliveryStarted_UpdateOrderStatus(@Payload DeliveryStarted deliveryStarted){
 
-        DelivaryStarted event = delivaryStarted;
-        System.out.println("\n\n##### listener UpdateOrderStatus : " + delivaryStarted + "\n\n");
+        DeliveryStarted event = deliveryStarted;
+        System.out.println("\n\n##### listener UpdateOrderStatus : " + deliveryStarted + "\n\n");
 
 
         

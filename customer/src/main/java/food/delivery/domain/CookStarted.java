@@ -6,7 +6,7 @@ import java.util.*;
 
 
 @Data
-public class Accepted extends AbstractEvent {
+public class CookStarted extends AbstractEvent {
 
     private Long id;
     private String orderId;
