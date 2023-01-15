@@ -70,6 +70,7 @@
                     { text: "userId", value: "userId" },
                     { text: "message", value: "message" },
                     { text: "status", value: "status" },
+                    { text: "orderId", value: "orderId" },
                 ],
             notification : [],
             newValue: {},
@@ -90,6 +91,7 @@
                 'userId': '',
                 'message': '',
                 'status': '',
+                'orderId': '',
             }
         },
         methods: {

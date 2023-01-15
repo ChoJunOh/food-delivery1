@@ -1,11 +1,11 @@
 package food.delivery.domain;
 
+import food.delivery.domain.*;
 import food.delivery.infra.AbstractEvent;
-import lombok.Data;
+import lombok.*;
 import java.util.*;
-
-
 @Data
+@ToString
 public class DeliveryStarted extends AbstractEvent {
 
     private Long id;
@@ -16,3 +16,5 @@ public class DeliveryStarted extends AbstractEvent {
     private String riderId;
     private String status;
 }
+
+

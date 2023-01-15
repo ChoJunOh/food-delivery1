@@ -42,6 +42,12 @@ public class Notification  {
     
     
     private String status;
+    
+    
+    
+    
+    
+    private String orderId;
 
     @PostPersist
     public void onPostPersist(){

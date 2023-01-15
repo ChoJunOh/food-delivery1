@@ -47,7 +47,7 @@ mvn spring-boot:run
 ```
 - customer
 ```
- http :8088/notifications id="id" userId="userId" message="message" status="status" 
+ http :8088/notifications id="id" userId="userId" message="message" status="status" orderId="orderId" 
 ```
 
 
